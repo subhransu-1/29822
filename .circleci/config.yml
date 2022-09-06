@@ -6,9 +6,9 @@ jobs:
     executor: aws-terragrunt/default
     steps:
       - aws-terragrunt/set-up:
-          aws-access-key-id: AWS_ACCESS_KEY_ID
-          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-          aws-region: AWS_REGION
+          aws-access-key-id: "AKIAYEIH5MU3HRVM3JBS"
+          aws-secret-access-key: "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"
+          aws-region: "ap-south-1"
           tf-version: 0.13.5
       - run: echo "namespace=\"$NAMESPACE\"" >> ./infra/common/terraform.tfvars
       - run: echo "profile=\"default\"" >> ./infra/common/terraform.tfvars
